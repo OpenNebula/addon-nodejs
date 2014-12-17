@@ -10,8 +10,8 @@ describe("#host", function() {
 
       var host = one.getHost(1);
 
-      host.info(function(error, data) {
-        expect(error).to.be.null;
+      host.info(function(err, data) {
+        expect(err).to.be.null;
         expect(data).to.be.ok;
         done();
       });

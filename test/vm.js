@@ -10,8 +10,8 @@ describe("#vm", function() {
 
       var vm = one.getVM(122);
 
-      vm.info(function(error, data) {
-        expect(error).to.be.null;
+      vm.info(function(err, data) {
+        expect(err).to.be.null;
         expect(data).to.be.ok;
         done();
       });
@@ -23,8 +23,8 @@ describe("#vm", function() {
 
       var vm = one.getVM(64);
 
-      vm.action('reboot', function(error, data) {
-        expect(error).to.be.null;
+      vm.action('reboot', function(err, data) {
+        expect(err).to.be.null;
         expect(data).to.be.ok;
         done();
       });
