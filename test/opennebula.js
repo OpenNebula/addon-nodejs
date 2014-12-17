@@ -16,4 +16,32 @@ describe("#opennebula", function() {
     });
   });
 
+  describe("#getHosts", function() {
+    it("should get host list", function(done) {
+      this.timeout(5000);
+
+      var host = one.getHosts(function(err, hosts) {
+        expect(err).to.be.null;
+        expect(hosts).to.be.ok;
+        expect(hosts).to.be.array;
+        done();
+      });
+
+    });
+  });
+
+  describe("#getVMS", function() {
+    it("should get vm list", function(done) {
+      this.timeout(5000);
+
+      var host = one.getVMs(function(err, vms) {
+        expect(err).to.be.null;
+        expect(vms).to.be.ok;
+        expect(vms).to.be.array;
+        done();
+      });
+
+    });
+  });
+
 });
