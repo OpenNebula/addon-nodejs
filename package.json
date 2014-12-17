@@ -1,0 +1,27 @@
+{
+  "name": "nodeoca",
+  "description": "OpenNebula XML-RPC API client.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apocas/node-one.git"
+  },
+  "bugs": {
+    "url": "https://github.com/apocas/node-one/issues"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "dependencies": {
+    "xmlrpc": "1.0.2",
+    "xml2js": "*",
+    "xmldom": "*"
+  },
+  "devDependencies": {
+    "chai": "~1.7.0",
+    "mocha": "~1.12.0"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -R spec"
+  }
+}
