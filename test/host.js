@@ -1,30 +1,18 @@
 var expect = require('chai').expect;
-var client = require('./spec_helper').client;
+var one = require('./spec_helper').one;
+
 
 describe("#host", function() {
 
-  describe("#hostsInfo", function() {
-    it("should fetch hosts list", function(done) {
-      this.timeout(5000);
-
-      client.call('hostpool.info', [], function(error, data) {
-        expect(data).not.to.be.null;
-
-        console.log(data);
-
-        done();
-      });
-
-    });
-
+  describe("#hostInfo", function() {
     it("should fetch host info", function(done) {
       this.timeout(5000);
 
-      client.call('host.info', [1], function(error, data) {
-        expect(data).not.to.be.null;
+      var host = one.getHost(1);
 
-        console.log(data);
-
+      host.info(function(error, data) {
+        expect(error).to.be.null;
+        expect(data).to.be.ok;
         done();
       });
 

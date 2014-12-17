@@ -1,7 +1,7 @@
-var Modem = require('../lib/modem');
+var OpenNebula = require('../lib/opennebula');
 
-var modem = new Modem(process.env.ONE_CREDENTIALS, process.env.ONE_HOST);
+var one = new OpenNebula(process.env.ONE_CREDENTIALS, process.env.ONE_HOST);
 
 module.exports = {
-  'client': modem
+  'one': one
 };
