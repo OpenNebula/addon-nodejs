@@ -1,6 +1,6 @@
 # opennebula
 
-[![NPM](https://nodei.co/npm/opennebula.png?downloads=true&stars=true)](https://nodei.co/npm/opennebula/)
+[![NPM](https://nodei.co/npm/opennebula.png?downloads=true)](https://nodei.co/npm/opennebula/)
 
 Opennebula XMLRPC Nodejs client.
 
@@ -66,6 +66,45 @@ one.createVM('GRAPHICS=[TYPE="vnc",LISTEN="0.0.0.0"]\nMEMORY="1024"\n FROM_APP="
 ```
 
 ## Spec
+
+### OpenNebula
+
+* one.version(callback)
+* one.config(callback)
+* one.getVM(id)
+* one.createVM(template, state, callback)
+* one.getVMs(callback, userFilter, startID, endID, stateFilter)
+* one.getHost(id)
+* one.createHost(hostname, immad, vmmad, vnmad, cluster, callback)
+* one.getHosts(callback)
+* one.createTemplate(template, callback)
+* one.getTemplate(id)
+* one.getTemplates(callback, userFilter, startID, endID)
+* one.createCluster(name, callback)
+* one.getCluster(id)
+* one.getClusters(callback)
+* one.createGroup(name, callback)
+* one.getGroup(id)
+* one.getGroups(callback)
+* one.createVNet(template, cluster, callback)
+* one.getVNet(id)
+* one.getVNets(callback, userFilter, startID, endID)
+* one.createUser(username, password, driver, callback)
+* one.login(username, token, period, callback)
+* one.getUser(id)
+* one.getUsers(callback)
+* one.createDatastore(template, cluster, callback)
+* one.getDatastore(id)
+* one.getDatastores(callback)
+* one.createImage(template, datastore, callback)
+* one.getImage(id)
+* one.getImages(callback, userFilter, startID, endID)
+* one.createZone(template, callback)
+* one.getZone(id)
+* one.getZones(callback)
+* one.createDocument(template, type, callback)
+* one.getDocument(id)
+* one.getDocuments(callback, userFilter, startID, endID)
 
 ### VM
 
@@ -145,13 +184,63 @@ one.createVM('GRAPHICS=[TYPE="vnc",LISTEN="0.0.0.0"]\nMEMORY="1024"\n FROM_APP="
 
 ### Host
 
+* host.info(callback)
+* host.enable(callback)
+* host.disable(callback)
+* host.update(template, merge, callback)
+* host.delete(callback)
+* host.rename(name, callback)
+
 ### Image
+
+* image.info(callback)
+* image.update(content, whole, callback)
+* image.clone(name, callback)
+* image.delete(callback)
+* image.chown(owner, callback)
+* image.chgrp(group, callback)
+* image.chmod(user_use, user_manage, user_admin, group_use, group_manage, group_admin, other_use, other_manage, other_admin, callback)
+* image.rename(name, callback)
+* image.persistent(persistent, callback)
+* image.chtype(type, callback)
+* image.enable(callback)
+* image.disable(callback)
 
 ### User
 
+* user.info(callback)
+* user.update(content, whole, callback)
+* user.delete(callback)
+* user.chgrp(group, callback)
+* user.passwd(password, callback)
+* user.chauth(driver, password, callback)
+* user.quota(template, callback)
+* user.addgroup(group, callback)
+* user.delgroup(group, callback)
+
 ### VNet
 
+* vnet.info(callback)
+* vnet.update(content, whole, callback)
+* vnet.addRange(content, callback)
+* vnet.delRange(range, callback)
+* vnet.freeRange(range, callback)
+* vnet.reserve(template, callback)
+* vnet.updateRange(template, callback)
+* vnet.hold(template, callback)
+* vnet.release(template, callback)
+* vnet.delete(callback)
+* vnet.chown(owner, callback)
+* vnet.chgrp(group, callback)
+* vnet.chmod(user_use, user_manage, user_admin, group_use, group_manage, group_admin, other_use, other_manage, other_admin, callback)
+* vnet.rename(name, callback)
+
 ### Zone
+
+* zone.info(callback)
+* zone.update(content, whole, callback)
+* zone.delete(callback)
+* zone.rename(name, callback)
 
 ## Tests
 
