@@ -27,10 +27,10 @@ one.version(function(err, data) {
 ### Manipulating a VM:
 
 ``` js
-// create a container entity. does not query API
+// create a vm entity. does not query API
 var vm = one.getVM(122);
 
-// query API for container info
+// query API for vm info
 vm.info(function (data) {
   console.log(data);
 });
