@@ -2,7 +2,7 @@
 
 [![NPM](https://nodei.co/npm/opennebula.png?downloads=true)](https://nodei.co/npm/opennebula/)
 
-Opennebula XMLRPC Nodejs client.
+OpenNebula XMLRPC Nodejs client.
 
 
 ## Installation
