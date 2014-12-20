@@ -73,4 +73,46 @@ describe("#opennebula", function() {
     });
   });
 
+  describe("#getUsers", function() {
+    it("should get users list", function(done) {
+      this.timeout(5000);
+
+      one.getUsers(function(err, users) {
+        expect(err).to.be.null;
+        expect(users).to.be.ok;
+        expect(users).to.be.array;
+        done();
+      });
+
+    });
+  });
+
+  describe("#getVNets", function() {
+    it("should get vnets list", function(done) {
+      this.timeout(5000);
+
+      one.getVNets(function(err, vnets) {
+        expect(err).to.be.null;
+        expect(vnets).to.be.ok;
+        expect(vnets).to.be.array;
+        done();
+      });
+
+    });
+  });
+
+  describe("#getGroups", function() {
+    it("should get groups list", function(done) {
+      this.timeout(5000);
+
+      one.getGroups(function(err, groups) {
+        expect(err).to.be.null;
+        expect(groups).to.be.ok;
+        expect(groups).to.be.array;
+        done();
+      });
+
+    });
+  });
+
 });
