@@ -13,7 +13,7 @@ Opennebula XMLRPC Nodejs client.
 
 ### Getting started
 
-To use `dockerode` first you need to instantiate it:
+To use `opennebula` first you need to instantiate it:
 
 ``` js
 var OpenNebula = require('opennebula');
