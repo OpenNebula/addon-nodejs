@@ -3,6 +3,32 @@ var one = require('./spec_helper').one;
 
 describe("#opennebula", function() {
 
+  describe("#version", function() {
+    it("should get version", function(done) {
+      this.timeout(10000);
+
+      one.version(function(err, version) {
+        expect(err).to.be.null;
+        expect(version).to.be.ok;
+        done();
+      });
+
+    });
+  });
+
+  describe("#config", function() {
+    it("should get config", function(done) {
+      this.timeout(10000);
+
+      one.config(function(err, config) {
+        expect(err).to.be.null;
+        expect(config).to.be.ok;
+        done();
+      });
+
+    });
+  });
+
   describe("#getHosts", function() {
     it("should get host list", function(done) {
       this.timeout(10000);
