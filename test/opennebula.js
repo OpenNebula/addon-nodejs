@@ -5,7 +5,7 @@ describe("#opennebula", function() {
 
   describe("#getHosts", function() {
     it("should get host list", function(done) {
-      this.timeout(5000);
+      this.timeout(10000);
 
       one.getHosts(function(err, hosts) {
         expect(err).to.be.null;
@@ -19,7 +19,7 @@ describe("#opennebula", function() {
 
   describe("#getVMs", function() {
     it("should get vm list", function(done) {
-      this.timeout(5000);
+      this.timeout(10000);
 
       one.getVMs(function(err, vms) {
         expect(err).to.be.null;
@@ -33,7 +33,7 @@ describe("#opennebula", function() {
 
   describe("#getTemplates", function() {
     it("should get template list", function(done) {
-      this.timeout(5000);
+      this.timeout(10000);
 
       one.getTemplates(function(err, templates) {
         expect(err).to.be.null;
@@ -47,7 +47,7 @@ describe("#opennebula", function() {
 
   describe("#getImages", function() {
     it("should get images list", function(done) {
-      this.timeout(5000);
+      this.timeout(10000);
 
       one.getImages(function(err, images) {
         expect(err).to.be.null;
@@ -61,7 +61,7 @@ describe("#opennebula", function() {
 
   describe("#getDatastores", function() {
     it("should get datastores list", function(done) {
-      this.timeout(5000);
+      this.timeout(10000);
 
       one.getDatastores(function(err, datastores) {
         expect(err).to.be.null;
@@ -75,7 +75,7 @@ describe("#opennebula", function() {
 
   describe("#getUsers", function() {
     it("should get users list", function(done) {
-      this.timeout(5000);
+      this.timeout(10000);
 
       one.getUsers(function(err, users) {
         expect(err).to.be.null;
@@ -89,7 +89,7 @@ describe("#opennebula", function() {
 
   describe("#getVNets", function() {
     it("should get vnets list", function(done) {
-      this.timeout(5000);
+      this.timeout(10000);
 
       one.getVNets(function(err, vnets) {
         expect(err).to.be.null;
@@ -103,12 +103,26 @@ describe("#opennebula", function() {
 
   describe("#getGroups", function() {
     it("should get groups list", function(done) {
-      this.timeout(5000);
+      this.timeout(10000);
 
       one.getGroups(function(err, groups) {
         expect(err).to.be.null;
         expect(groups).to.be.ok;
         expect(groups).to.be.array;
+        done();
+      });
+
+    });
+  });
+
+  describe("#getZones", function() {
+    it("should get zones list", function(done) {
+      this.timeout(10000);
+
+      one.getZones(function(err, zones) {
+        expect(err).to.be.null;
+        expect(zones).to.be.ok;
+        expect(zones).to.be.array;
         done();
       });
 
