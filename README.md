@@ -2,8 +2,7 @@
 
 [![NPM](https://nodei.co/npm/opennebula.png?downloads=true)](https://nodei.co/npm/opennebula/)
 
-OpenNebula XMLRPC Nodejs client.
-
+[OpenNebula](http://opennebula.org) XMLRPC Nodejs client.
 
 ## Installation
 
@@ -11,6 +10,9 @@ OpenNebula XMLRPC Nodejs client.
 
 ## Usage
 
+* Input options are directly passed to OpenNebula. Check [OpenNebula XMLRPC API documentation](http://docs.opennebula.org/4.10/integration/system_interfaces/api.html) for more details.
+* Return values are unchanged from OpenNebula, official documentation will also apply to them.
+* Check the tests and examples folder for more examples.
 ### Getting started
 
 To use `opennebula` first you need to instantiate it:
