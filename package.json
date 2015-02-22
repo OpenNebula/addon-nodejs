@@ -2,7 +2,6 @@
   "name": "opennebula",
   "description": "OpenNebula Node.JS XMLRPC API client.",
   "version": "1.0.4",
-  "main": "lib/opennebula.js", /* TODO: Not Node.JS Standard! */
   "repository": {
     "type": "git",
     "url": "https://github.com/OpenNebula/addon-nodejs.git"
