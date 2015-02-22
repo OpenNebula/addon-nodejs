@@ -78,7 +78,7 @@ one.createVM('GRAPHICS=[TYPE="vnc",LISTEN="0.0.0.0"]\nMEMORY="1024"\n FROM_APP="
 
 ### OpenNebula
 
-* one.accounting(callback, filter, start, end)
+* one.getAccounting(callback, filter, start, end)
 
 * one.version(callback)
 * one.config(callback)
