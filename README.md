@@ -6,14 +6,16 @@
 
 ## Installation
 
-`mkdir node_modules`
-`cd node_modules`
-`git clone https://github.com/OpenNebula/addon-nodejs.git`
-`mv addon-nodejs opennebula`
+``` bash
+mkdir node_modules
+cd node_modules
+git clone https://github.com/OpenNebula/addon-nodejs.git
+mv addon-nodejs opennebula
+```
 
 ## Bugs
 
-# This release is currently broken on Node v0.12.0
+### This release is currently broken on Node v0.12.0
 
 ## Usage
 
