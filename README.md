@@ -1,6 +1,6 @@
 # addon-nodejs
 
-[![NPM](https://nodei.co/npm/opennebula.png?downloads=true)](https://nodei.co/npm/opennebula/)
+[![NPM](https://nodei.co/npm/opennebula.png?downloads=true)](https://nodei.co/npm/OpenNebula/addon-nodejs/)
 
 [OpenNebula](http://opennebula.org) XMLRPC Nodejs client.
 
