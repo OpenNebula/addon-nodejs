@@ -7,10 +7,7 @@
 ## Installation
 
 ``` bash
-mkdir node_modules
-cd node_modules
-git clone https://github.com/OpenNebula/addon-nodejs.git
-mv addon-nodejs opennebula
+npm install OpenNebula/addon-nodejs
 ```
 
 ## Bugs
