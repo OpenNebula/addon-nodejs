@@ -1,5 +1,6 @@
 var expect = require('chai').expect;
-var one = require('./spec_helper').one;
+var spec = require('./spec_helper');
+var one = spec.one;
 
 
 describe("#host", function() {
@@ -8,7 +9,7 @@ describe("#host", function() {
     it("should fetch host info", function(done) {
       this.timeout(5000);
 
-      var host = one.getHost(1);
+      var host = one.getHost(spec.defaultHost);
 
       host.info(function(err, data) {
         expect(err).to.be.null;
