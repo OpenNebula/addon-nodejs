@@ -20,7 +20,7 @@ To use `opennebula` first you need to instantiate it:
 
 ``` js
 var OpenNebula = require('opennebula');
-var one = new OpenNebula(process.env.ONE_CREDENTIALS, process.env.ONE_HOST);
+var one = new OpenNebula('user:hash', 'http://myone.one:2633/RPC2');
 
 one.version(function(err, data) {
   console.log(data);
