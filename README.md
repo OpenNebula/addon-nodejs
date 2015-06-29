@@ -34,7 +34,7 @@ one.version(function(err, data) {
 var vm = one.getVM(122);
 
 // query API for vm info
-vm.info(function (data) {
+vm.info(function (err, data) {
   console.log(data);
 });
 
