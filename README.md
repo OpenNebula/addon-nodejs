@@ -112,6 +112,7 @@ one.createVM('GRAPHICS=[TYPE="vnc",LISTEN="0.0.0.0"]\nMEMORY="1024"\n FROM_APP="
 ### VM
 
 * vm.info(callback)
+* vm.monitoring(callback)
 * vm.action(action, callback)
 * vm.deploy(host, datastore, enforce, callback)
 * vm.diskSnapshot(disk, name, type, imed, clone, callback)
