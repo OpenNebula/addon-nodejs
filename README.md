@@ -128,6 +128,12 @@ one.createVM('GRAPHICS=[TYPE="vnc",LISTEN="0.0.0.0"]\nMEMORY="1024"\n FROM_APP="
 * vm.resize(template, enforce, callback)
 * vm.update(template, replace, callback)
 * vm.recover(recover, callback)
+* vm.migrate(host, live, enforce, datastore, callback)
+* vm.saveAsDisk(disk, imagename, imagetype, snapshot, callback)
+* vm.createDiskSnapshot(disk, snapshot, callback)
+* vm.updateConf(template, callback)
+* vm.revertDiskSnapshot(disk, snapshot, callback)
+* vm.deleteDiskSnapshot(disk, snapshot, callback)
 
 ### Datastore
 
@@ -192,6 +198,9 @@ one.createVM('GRAPHICS=[TYPE="vnc",LISTEN="0.0.0.0"]\nMEMORY="1024"\n FROM_APP="
 * host.update(template, merge, callback)
 * host.delete(callback)
 * host.rename(name, callback)
+* monitoring(callback)
+* allocate(hostname, manager, vm, cluster, callback)
+* setStatus(status, callback)
 
 ### Image
 
