@@ -134,6 +134,8 @@ one.createVM('GRAPHICS=[TYPE="vnc",LISTEN="0.0.0.0"]\nMEMORY="1024"\n FROM_APP="
 * vm.updateConf(template, callback)
 * vm.revertDiskSnapshot(disk, snapshot, callback)
 * vm.deleteDiskSnapshot(disk, snapshot, callback)
+* vm.lock(level, callback)
+* vm.unlock(callback)
 
 ### Datastore
 
@@ -216,6 +218,8 @@ one.createVM('GRAPHICS=[TYPE="vnc",LISTEN="0.0.0.0"]\nMEMORY="1024"\n FROM_APP="
 * image.chtype(type, callback)
 * image.enable(callback)
 * image.disable(callback)
+* image.lock(level, callback)
+* image.unlock(callback)
 
 ### User
 
